@@ -1,42 +1,61 @@
 .orbit {
-  position: absolute;
-  right: 14px;
-  z-index: -2;
-  filter: opacity(0.5);
-  width: 1200px;
-  height: 1200px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
+  position: relative;
+  max-width: 50px;
+  max-height: 50px;
 
-  &.uranus {
-    animation: circle14512 9s linear infinite;
-    right: -130px;
-    z-index: -1;
-  }
-
-  &.saturn {
+  .rotation {
+    position: absolute;
+    bottom: -1445px;
+    z-index: -2;
+    filter: opacity(0.5);
+    width: 1200px;
+    height: 1200px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
     animation: circle14512 8s linear infinite;
-    right: -75px;
-    z-index: -1;
+    right: -365px;
   }
 
-  &.sun {
-    animation: circle14512 13.2s linear infinite;
-    z-index: -1;
-    right: 200px;
-  }
+  // position: absolute;
+  // right: 14px;
+  // bottom: -680px;
+  // z-index: -2;
+  // filter: opacity(0.5);
+  // width: 1200px;
+  // height: 1200px;
+  // border: 2px solid #ccc;
+  // border-radius: 50%;
 
-  &.rocket {
-    animation: circle14512 6s linear infinite;
-    z-index: -1;
-    right: 20px;
-  }
+  // &.saturn {
+  //   animation: circle14512 8s linear infinite;
+  //   right: -75px;
+  //   z-index: -1;
+  //   position: absolute;
+  // }
 
-  &.moon {
-    animation: circle14512 10.8s linear infinite;
-    z-index: -1;
-    right: 90px;
-  }
+  // &.uranus {
+  //   animation: circle14512 9s linear infinite;
+  //   right: -130px;
+  //   z-index: -1;
+  // }
+
+  // &.sun {
+  //   animation: circle14512 13.2s linear infinite;
+  //   z-index: -1;
+  //   right: 200px;
+  // }
+
+  // &.rocket {
+  //   animation: circle14512 6s linear infinite;
+  //   z-index: -1;
+  //   right: 20px;
+  // }
+
+  // &.moon {
+  //   animation: circle14512 10.8s linear infinite;
+  //   z-index: -1;
+  //   right: 90px;
+  // }
 }
 
 
