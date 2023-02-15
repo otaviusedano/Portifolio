@@ -1,8 +1,8 @@
 import './styles.scss'
 
-export function ContainerSection ({children}: any) {
+export function ContainerSection ({children, sectionName, id}: any) {
   return (
-    <section>
+    <section id={id} className={`section ${sectionName}`}>
       {children}
     </section>
   )

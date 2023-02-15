@@ -1,4 +1,12 @@
 section {
   padding: 14px;
-  padding-top: 220px;
+  height: 100%;
+  
+  &.main {
+    padding-top: 300px;
+  }
+
+  &.projects {
+    padding-top: 180px;
+  }
 }
