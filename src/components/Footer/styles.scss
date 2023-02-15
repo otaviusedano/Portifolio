@@ -1,0 +1,30 @@
+footer {
+  padding: 2.2rem;
+  padding-bottom: 156px;
+
+  .logo {
+    padding-bottom: 6px;
+  }
+
+  .container__content {
+    display: grid;
+    justify-content: center;
+    gap: 0.6rem;
+    
+    h1 {
+      font-size: 26px;
+    }
+    
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      color: #242424;    
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}
