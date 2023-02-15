@@ -1,0 +1,65 @@
+.project {
+  height: 360px;
+  display: flex;
+  position: relative;
+
+  .no-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 360px;
+    transition: .3s ease;
+    background-color: transparent;
+  }
+
+  .overlay {
+    border-radius: 0.4rem;
+    position: absolute;
+    left: -1rem;
+    right: -1rem;
+    height: 360px;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.201);
+
+    .container__info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 18px;
+
+      .infos {
+        display: grid;
+        gap: 8px;
+      }
+    }
+  }
+
+  .icone {
+    position: absolute;
+
+    &.view {
+      right: 80px;
+      bottom: 20px;
+    }
+
+    &.navigate {
+      left: 80px;
+      bottom: 20px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+    align-self: center;
+    z-index: -1;
+    transition: .3s ease;
+    background-color: transparent;
+
+    &.opacity {
+      opacity: 0.2;
+      transition: .3s ease;
+    }
+  }
+}
