@@ -1,9 +1,18 @@
 header {
   position: fixed;
+  top: 0;
+  z-index: 5;
   display: flex;
-  width: 100%;
+
+  width: 100vw;
   align-items: center;
   gap: 12px;
   padding: 24px;
   justify-content: space-between;
+  background-color: rgba(254, 254, 254, 0.95);
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
