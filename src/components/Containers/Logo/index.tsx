@@ -1,9 +1,5 @@
-import './styles.scss'
+import "./styles.scss"
 
-export function ContainerLogo ({children}: any) {
-  return (
-    <div className='container__logo'>
-      {children}
-    </div>
-  )
+export function ContainerLogo({ children }: any) {
+  return <div className="container__logo">{children}</div>
 }

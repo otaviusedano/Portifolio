@@ -1,7 +1,5 @@
-import './styles.scss'
+import "./styles.scss"
 
-export function Title ({children}: any) {
-  return (
-    <h1 className='title'>{children}</h1>
-  )
+export function Title({ children }: any) {
+  return <h1 className="title">{children}</h1>
 }

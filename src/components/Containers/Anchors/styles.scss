@@ -1,0 +1,10 @@
+.container__anchors {
+  display: flex;
+  gap: 12px;
+}
+
+@media (min-width: 760px) {
+  .container__anchors {
+    gap: 22px;
+  }
+}

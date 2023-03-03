@@ -1,46 +1,44 @@
-import { IoIosPlanet, IoIosSunny, IoIosRocket, IoIosMoon} from "react-icons/io";
+import { IoIosPlanet, IoIosSunny, IoIosRocket, IoIosMoon } from "react-icons/io"
+import { Link as LinkScroll } from "react-scroll"
 
-import { ContainerSection } from './components/Containers/Section'
-import { ContainerText } from './components/Containers/Text'
-import { Header } from './components/Header'
-import { SubTitle } from './components/SubTitle'
-import { Title } from './components/Title'
-import { ContainerLinks } from './components/Containers/Links';
-import { Link } from './components/Link';
-import { ContainerOrbit } from './components/Containers/Orbit';
-import { ContainerProjects } from './components/Containers/Projects';
-import { Project } from './components/Project';
-import { Link as LinkScroll, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import projeto1 from './assets/project 1.png'
+import projeto1 from "./assets/project 1.png"
+import projeto2 from "./assets/project 2.png"
+import projeto3 from "./assets/project 3.png"
+import { ContainerLinks } from "./components/Containers/Links"
+import { ContainerOrbit } from "./components/Containers/Orbit"
+import { ContainerProjects } from "./components/Containers/Projects"
+import { ContainerSection } from "./components/Containers/Section"
+import { ContainerText } from "./components/Containers/Text"
+import { Footer } from "./components/Footer"
+import { Header } from "./components/Header"
+import { IntrodutionText } from "./components/IntrodutionText"
+import { Link } from "./components/Link"
+import { Project } from "./components/Project"
+import { ProjectText } from "./components/ProjectText"
+import { SubTitle } from "./components/SubTitle"
+import { Title } from "./components/Title"
 
-import './App.scss'
-import { Footer } from "./components/Footer";
+import "./App.scss"
+import { BodyText } from "./components/BodyText"
 
 function App() {
-
   return (
     <>
       <Header />
-      <ContainerOrbit planet='saturn'>
-        <IoIosPlanet color='#242424' fontSize={120} />
+      <ContainerOrbit planet="saturn">
+        <IoIosPlanet color="#242424" fontSize={120} />
       </ContainerOrbit>
-      <ContainerSection sectionName='main' id='main'>
-        {/* <ContainerOrbit planet='uranus'>
-          <IoIosPlanet color='blue' fontSize={80} />
-        </ContainerOrbit>
-        <ContainerOrbit planet='sun'>
-          <IoIosSunny color='#242424' fontSize={120} />
-        </ContainerOrbit>
-        <ContainerOrbit planet='rocket'>
-          <IoIosRocket color='#242424' fontSize={100} />
-        </ContainerOrbit>
-        <ContainerOrbit planet='moon'>
-          <IoIosMoon color='#242424' fontSize={80} />
-        </ContainerOrbit> */}
+      <ContainerOrbit planet="uranus">
+        <IoIosPlanet color="blue" fontSize={80} />
+      </ContainerOrbit>
+      <ContainerSection id="main">
         <ContainerText>
-          <SubTitle>OTAVIO SEDANO</SubTitle>
-          <Title>Desenvolvedor Web</Title>
-          <SubTitle>Lorem ipsum dolor sit amet consectetur. amet consectetur amet consectetur.</SubTitle>
+          <IntrodutionText>OTAVIO SEDANO</IntrodutionText>
+          <Title>Um estudante entusiasta no desenvolvimento Web</Title>
+          <SubTitle>
+            Um jovem apaixonado pela tecnologia, em busca de novos desafios como
+            programador.
+          </SubTitle>
           <ContainerLinks>
             <LinkScroll
               to="about"
@@ -53,11 +51,9 @@ function App() {
               isDynamic={true}
               ignoreCancelEvents={false}
             >
-              <Link>
-                Sobre mim
-              </Link>
+              <Link>Sobre mim</Link>
             </LinkScroll>
-                      ou
+            ou
             <LinkScroll
               to="projects"
               spy={true}
@@ -69,27 +65,119 @@ function App() {
               isDynamic={true}
               ignoreCancelEvents={false}
             >
-              <Link>
-                Projetos
-              </Link>
+              <Link>Projetos</Link>
             </LinkScroll>
           </ContainerLinks>
         </ContainerText>
       </ContainerSection>
-      <ContainerSection sectionName='projects' id='projects'>
+      <ContainerSection id="projects">
         <ContainerText>
-          <SubTitle>SELECIONADOS</SubTitle>
+          <IntrodutionText>SELECIONADOS</IntrodutionText>
           <Title>Projetos</Title>
         </ContainerText>
         <ContainerProjects>
-          <Project img={projeto1} link='https://translation-rouge.vercel.app/' projectName='Translation' bodyText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut animi commodi.' />
-          <Project img={projeto1} link='https://translation-rouge.vercel.app/' projectName='Translation' bodyText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut animi commodi.' />
-          <Project img={projeto1} link='https://translation-rouge.vercel.app/' />
+          <Project
+            img={projeto1}
+            linkToProject="https://translation-rouge.vercel.app/"
+            linkToCode="https://github.com/otaviusedano/translation"
+            projectName="Translation"
+            techs={[
+              "HTML5",
+              "CSS3",
+              "AXIOS",
+              "JAVASCRIPT",
+              "REACT",
+              "SCSS",
+              "LOCALSTORAGE",
+            ]}
+          />
+          <Project
+            img={projeto2}
+            linkToProject="https://checked-cbfcf.web.app/"
+            linkToCode="https://github.com/otaviusedano/checked-habits-2.0v-"
+            projectName="Habits 2.0"
+            techs={["HTML5", "CSS3", "JAVASCRIPT", "FIREBASE", "REACT", "SCSS"]}
+          />
+          <Project
+            img={projeto3}
+            projectName="Pokemon Search"
+            linkToProject="https://pokemon-search-angular.vercel.app/"
+            linkToCode="https://github.com/otaviusedano/pokemon-search-V2-angular"
+            link="https://translation-rouge.vercel.app/"
+            techs={[
+              "HTML5",
+              "CSS3",
+              "SCSS",
+              "JAVASCRIPT",
+              "ANGULAR",
+              "CONSUMO DE API",
+            ]}
+          />
         </ContainerProjects>
       </ContainerSection>
-      <ContainerSection sectionName='about' id='about'>
+      <ContainerSection id="about">
+        <ContainerText>
+          <IntrodutionText>SOBRE MIM</IntrodutionText>
+          <Title>
+            Olá, Eu me chamo Otávio Sedano, sou um desenvolvedor Front-end que
+            foca na criação de projetos inteligentes e visualmente inovadores.
+          </Title>
+          <br />
+          <BodyText>
+            Há mais de um ano atrás eu iniciava a minha carreira como
+            desenvolvedor, sem saber muito o que esse mundo tinha a me oferecer.
+            Descobri um grande interresse em JavaScript quando programei uma
+            simples função de soma, Desde então já desenvolvi diversos projetos
+            com essa linguagem de programação incrível, procurando me aprofundar
+            cada vez mais na minha paixão, a programação web.
+          </BodyText>
+          <BodyText>
+            Hoje estou graduando Desenvolvimento Full Stack pela Estácio.
+          </BodyText>
+          <br />
+          <br />
+          <br />
+          <IntrodutionText>ALGUNS PROJETOS</IntrodutionText>
+          <ContainerProjects role="text">
+            <Link to="https://translation-rouge.vercel.app/">Translation</Link>
+            <em>/</em>
+            <Link to="https://checked-cbfcf.web.app/">Habits 2.0</Link>
+            <em>/</em>
+            <Link to="https://to-buy.vercel.app/">ToBuy</Link>
+            <em>/</em>
+            <Link to="https://noteread-732b5.web.app">Noteready</Link>
+            <em>/</em>
+            <Link to="https://pokemon-search-angular.vercel.app/">
+              Pokemon Search
+            </Link>
+          </ContainerProjects>
+          <br />
+          <br />
+          <IntrodutionText>TECNOLOGIAS USADAS</IntrodutionText>
+          <ContainerProjects role="text">
+            <Link isInfo>React</Link>
+            <em>/</em>
+            <Link isInfo>TypeScript</Link>
+            <em>/</em>
+            <Link isInfo>Angular</Link>
+            <em>/</em>
+            <Link isInfo>JavaScript</Link>
+            <em>/</em>
+            <Link isInfo>Firebase</Link>
+            <em>/</em>
+            <Link isInfo>Scss</Link>
+            <em>/</em>
+            <Link isInfo>HTML5</Link>
+            <em>/</em>
+            <Link isInfo>CSS3</Link>
+            <em>/</em>
+            <Link isInfo>LocalStorage</Link>
+            <em>/</em>
+            <Link isInfo>Axios</Link>
+          </ContainerProjects>
+        </ContainerText>
       </ContainerSection>
-      <Footer></Footer>
+      <Footer />
     </>
   )
 }

@@ -12,54 +12,27 @@
     height: 1200px;
     border: 2px solid #ccc;
     border-radius: 50%;
-    animation: circle14512 8s linear infinite;
+    animation: animateOrbit 8s linear infinite;
     right: -365px;
+
+    &.uranus {
+      animation: animateOrbit 10s linear infinite;
+      left: 1100px;
+      top: -325px;
+      z-index: -1;
+    }
   }
+}
 
-  // position: absolute;
-  // right: 14px;
-  // bottom: -680px;
-  // z-index: -2;
-  // filter: opacity(0.5);
-  // width: 1200px;
-  // height: 1200px;
-  // border: 2px solid #ccc;
-  // border-radius: 50%;
-
-  // &.saturn {
-  //   animation: circle14512 8s linear infinite;
-  //   right: -75px;
-  //   z-index: -1;
-  //   position: absolute;
-  // }
-
-  // &.uranus {
-  //   animation: circle14512 9s linear infinite;
-  //   right: -130px;
-  //   z-index: -1;
-  // }
-
-  // &.sun {
-  //   animation: circle14512 13.2s linear infinite;
-  //   z-index: -1;
-  //   right: 200px;
-  // }
-
-  // &.rocket {
-  //   animation: circle14512 6s linear infinite;
-  //   z-index: -1;
-  //   right: 20px;
-  // }
-
-  // &.moon {
-  //   animation: circle14512 10.8s linear infinite;
-  //   z-index: -1;
-  //   right: 90px;
-  // }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .orbit .rotation.uranus {
+    left: 825px;
+    top: -425px;
+  }
 }
 
 
-@keyframes circle14512 {
+@keyframes animateOrbit {
   0% {
     transform: rotate(0deg);
   }

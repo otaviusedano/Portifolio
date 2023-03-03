@@ -1,9 +1,17 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@use './scss/colors' as *;
 
+:root {
+
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  font-family: 'Noto Sans', sans-serif;
   // color-scheme: light dark;
-  color: #242424;
-  background-color: #fefefefe;
+  color: var(--clr-black-100);
+  background-color: var(--clr-white-100);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

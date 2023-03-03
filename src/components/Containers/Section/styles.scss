@@ -1,12 +1,66 @@
 section {
-  padding: 14px;
+  padding: 0.875rem;
   height: 100%;
+  padding-top: 170px;
   
-  &.main {
+  &#main {
     padding-top: 300px;
-  }
 
-  &.projects {
-    padding-top: 180px;
+    .container__text {
+      gap: 1.4rem;
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  section {
+    padding: 2.5rem;
+    padding-top: 260px;
+
+    &#main {
+      .title {
+        font-size: 3rem;
+      }
+
+      .sub-title {
+        width: 69.333333333%;
+        font-size: 1.4rem;
+      }
+    }
+
+    &#about {
+      text-align: center;
+
+      .title {
+        margin-left: 8.333333333%;
+        width: 83.333333333%;
+      }
+  
+      .body-text {
+        margin-left: 16.666666667%;
+        width: 66.666666667%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1040px) {
+  section#main {
+    .title {
+      font-size: 3.565rem;
+      width: 83.333333333%;
+    }
+
+    .sub-title {
+      width: 58.333333333%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  section#main {
+    .title {
+      font-size: 4.565rem;
+    }
   }
 }

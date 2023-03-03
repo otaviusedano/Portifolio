@@ -1,7 +1,14 @@
-import './styles.scss'
+import "./styles.scss"
 
-export function Link ({children}: any) {
+export function Link({ children, to, isInfo }: any) {
   return (
-    <a className='link'>{children}</a>
+    <a
+      target="_blank"
+      href={to}
+      className={`link ${isInfo ? "info" : ""}`}
+      rel="noreferrer"
+    >
+      {children}
+    </a>
   )
 }

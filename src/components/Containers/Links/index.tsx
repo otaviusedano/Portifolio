@@ -1,9 +1,5 @@
-import './styles.scss'
+import "./styles.scss"
 
-export function ContainerLinks ({children}: any) {
-  return (
-    <div className='container__links'>
-      {children}
-    </div>
-  )
+export function ContainerLinks({ children }: any) {
+  return <div className="container__links">{children}</div>
 }

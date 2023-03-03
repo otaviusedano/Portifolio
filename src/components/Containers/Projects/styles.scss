@@ -1,6 +1,28 @@
 .container__projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.8rem;
+  padding: 1.2rem 0;
+  justify-content: center;
+
+  &[role="text"] {
+    gap: 0.5rem;
+    row-gap: 0.25rem;
+    padding: 0;
+    margin-top: 8px;
+
+    em {
+      color: var(--clr-gray-100);
+      font-style: normal;
+      padding: 0 6px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .container__projects[role="text"] {
+    margin-left: 16.666666667%;
+    width: 66.666666667%;
+  }
 }

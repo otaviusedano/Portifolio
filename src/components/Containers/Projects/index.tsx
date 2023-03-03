@@ -1,8 +1,8 @@
-import './styles.scss'
+import "./styles.scss"
 
-export function ContainerProjects ({children}: any) {
+export function ContainerProjects({ children, role }: any) {
   return (
-    <div className='container__projects'>
+    <div role={role} className="container__projects">
       {children}
     </div>
   )

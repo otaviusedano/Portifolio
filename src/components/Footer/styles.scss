@@ -1,6 +1,6 @@
 footer {
   padding: 2.2rem;
-  padding-bottom: 156px;
+  padding-bottom: 120px;
 
   .logo {
     padding-bottom: 6px;
@@ -10,17 +10,17 @@ footer {
     display: grid;
     justify-content: center;
     gap: 0.6rem;
-    
+
     h1 {
-      font-size: 26px;
+      font-size: 2rem;
     }
-    
+
     a {
       display: flex;
       align-items: center;
       gap: 0.4rem;
       text-decoration: none;
-      color: #242424;    
+      color: var(--clr-black-100);    
 
       span {
         font-weight: 500;

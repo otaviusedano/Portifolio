@@ -1,9 +1,5 @@
-import './styles.scss'
+import "./styles.scss"
 
-export function ContainerText ({children}: any) {
-  return (
-    <div className='container__text'>
-      {children}
-    </div>
-  )
+export function ContainerText({ children }: any) {
+  return <div className="container__text">{children}</div>
 }

@@ -1,65 +1,53 @@
 .project {
-  height: 360px;
-  display: flex;
   position: relative;
+  padding-bottom: 1.6rem;
 
-  .no-overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 360px;
-    transition: .3s ease;
-    background-color: transparent;
-  }
+  .container__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
 
-  .overlay {
-    border-radius: 0.4rem;
-    position: absolute;
-    left: -1rem;
-    right: -1rem;
-    height: 360px;
-    transition: .3s ease;
-    background-color: rgba(0, 0, 0, 0.201);
-
-    .container__info {
+    .infos {
       display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 18px;
-
-      .infos {
-        display: grid;
-        gap: 8px;
-      }
-    }
-  }
-
-  .icone {
-    position: absolute;
-
-    &.view {
-      right: 80px;
-      bottom: 20px;
-    }
-
-    &.navigate {
-      left: 80px;
-      bottom: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 14px;
+      row-gap: 8px;
     }
   }
 
   img {
     max-width: 100%;
-    height: auto;
     border-radius: 0.4rem;
     align-self: center;
     z-index: -1;
     transition: .3s ease;
     background-color: transparent;
+  }
+}
 
-    &.opacity {
-      opacity: 0.2;
-      transition: .3s ease;
+@media (min-width: 760px) {
+  .project {
+    max-width: 42vw;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .project {
+    img {
+      max-height: 30vh;
+    }
+  }
+}
+
+@media (min-width: 1340px) {
+  .project {
+    max-width: 50vw;
+
+    img {
+      max-height: 40vh;
     }
   }
 }
