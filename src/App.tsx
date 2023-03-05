@@ -4,6 +4,7 @@ import { Link as LinkScroll } from "react-scroll"
 import projeto1 from "./assets/project 1.png"
 import projeto2 from "./assets/project 2.png"
 import projeto3 from "./assets/project 3.png"
+import projeto4 from "./assets/project 4.png"
 import { ContainerLinks } from "./components/Containers/Links"
 import { ContainerOrbit } from "./components/Containers/Orbit"
 import { ContainerProjects } from "./components/Containers/Projects"
@@ -113,19 +114,11 @@ function App() {
             ]}
           />
           <Project
-            img={projeto1}
-            linkToProject="https://translation-rouge.vercel.app/"
-            linkToCode="https://github.com/otaviusedano/translation"
-            projectName="Translation"
-            techs={[
-              "HTML5",
-              "CSS3",
-              "AXIOS",
-              "JAVASCRIPT",
-              "REACT",
-              "SCSS",
-              "LOCALSTORAGE",
-            ]}
+            img={projeto4}
+            linkToProject="https://otaviusedano.github.io/rocket-coffee/"
+            linkToCode="https://github.com/otaviusedano/rocket-coffee"
+            projectName="Rocket Coffee"
+            techs={["HTML5", "CSS3", "JAVASCRIPT", "DOM"]}
           />
         </ContainerProjects>
       </ContainerSection>
