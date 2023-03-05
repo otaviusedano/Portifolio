@@ -1,4 +1,4 @@
-import { IoIosPlanet, IoIosSunny, IoIosRocket, IoIosMoon } from "react-icons/io"
+import { IoIosPlanet } from "react-icons/io"
 import { Link as LinkScroll } from "react-scroll"
 
 import projeto1 from "./assets/project 1.png"
@@ -14,12 +14,11 @@ import { Header } from "./components/Header"
 import { IntrodutionText } from "./components/IntrodutionText"
 import { Link } from "./components/Link"
 import { Project } from "./components/Project"
-import { ProjectText } from "./components/ProjectText"
 import { SubTitle } from "./components/SubTitle"
 import { Title } from "./components/Title"
+import { BodyText } from "./components/BodyText"
 
 import "./App.scss"
-import { BodyText } from "./components/BodyText"
 
 function App() {
   return (
@@ -111,6 +110,21 @@ function App() {
               "JAVASCRIPT",
               "ANGULAR",
               "CONSUMO DE API",
+            ]}
+          />
+          <Project
+            img={projeto1}
+            linkToProject="https://translation-rouge.vercel.app/"
+            linkToCode="https://github.com/otaviusedano/translation"
+            projectName="Translation"
+            techs={[
+              "HTML5",
+              "CSS3",
+              "AXIOS",
+              "JAVASCRIPT",
+              "REACT",
+              "SCSS",
+              "LOCALSTORAGE",
             ]}
           />
         </ContainerProjects>
