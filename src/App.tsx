@@ -78,7 +78,7 @@ function App() {
         <ContainerProjects>
           <Project
             img={projeto1}
-            linkToProject="https://translation-rouge.vercel.app/"
+            linkToProject="https://otaviusedano.github.io/translation/"
             linkToCode="https://github.com/otaviusedano/translation"
             projectName="Translation"
             techs={[
