@@ -103,7 +103,6 @@ function App() {
             projectName="Pokemon Search"
             linkToProject="https://pokemon-search-angular.vercel.app/"
             linkToCode="https://github.com/otaviusedano/pokemon-search-V2-angular"
-            link="https://translation-rouge.vercel.app/"
             techs={[
               "HTML5",
               "CSS3",
@@ -146,7 +145,9 @@ function App() {
           <br />
           <IntrodutionText>ALGUNS PROJETOS</IntrodutionText>
           <ContainerProjects role="text">
-            <Link to="https://translation-rouge.vercel.app/">Translation</Link>
+            <Link to="https://otaviusedano.github.io/translation/">
+              Translation
+            </Link>
             <em>/</em>
             <Link to="https://checked-cbfcf.web.app/">Habits 2.0</Link>
             <em>/</em>
