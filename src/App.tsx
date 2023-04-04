@@ -97,11 +97,10 @@ function App() {
             projectName="Habits 2.0"
             techs={[
               "HTML5",
-              "CSS3",
+              "SCSS",
               "JAVASCRIPT",
               "FIREBASE",
               "REACT",
-              "SCSS",
               "REACT ROUTER DOM",
               "MUI MATERIAL",
             ]}
@@ -113,7 +112,6 @@ function App() {
             linkToCode="https://github.com/otaviusedano/pokemon-search-V2-angular"
             techs={[
               "HTML5",
-              "CSS3",
               "SCSS",
               "JAVASCRIPT",
               "ANGULAR",
@@ -128,11 +126,10 @@ function App() {
             projectName="Translation"
             techs={[
               "HTML5",
-              "CSS3",
+              "SCSS",
               "AXIOS",
               "JAVASCRIPT",
               "REACT",
-              "SCSS",
               "API REST",
               "LOCALSTORAGE",
             ]}
@@ -181,25 +178,35 @@ function App() {
           <br />
           <IntrodutionText>TECNOLOGIAS USADAS</IntrodutionText>
           <ContainerProjects role="text">
-            <Link isInfo>React</Link>
-            <em>/</em>
-            <Link isInfo>TypeScript</Link>
-            <em>/</em>
-            <Link isInfo>Angular</Link>
-            <em>/</em>
-            <Link isInfo>JavaScript</Link>
-            <em>/</em>
-            <Link isInfo>Firebase</Link>
-            <em>/</em>
-            <Link isInfo>Scss</Link>
-            <em>/</em>
             <Link isInfo>HTML5</Link>
             <em>/</em>
             <Link isInfo>CSS3</Link>
             <em>/</em>
+            <Link isInfo>JavaScript</Link>
+            <em>/</em>
+            <Link isInfo>SCSS</Link>
+            <em>/</em>
+            <Link isInfo>TypeScript</Link>
+            <em>/</em>
+            <Link isInfo>React</Link>
+            <em>/</em>
+            <Link isInfo>Angular</Link>
+            <em>/</em>
+            <Link isInfo>Firebase</Link>
+            <em>/</em>
+            <Link isInfo>Tailwind CSS</Link>
+            <em>/</em>
             <Link isInfo>LocalStorage</Link>
             <em>/</em>
             <Link isInfo>Axios</Link>
+            <em>/</em>
+            <Link isInfo>React Router DOM</Link>
+            <em>/</em>
+            <Link isInfo>MUI Material</Link>
+            <em>/</em>
+            <Link isInfo>Jest Testing</Link>
+            <em>/</em>
+            <Link isInfo>Testing Library</Link>
           </ContainerProjects>
         </ContainerText>
       </ContainerSection>
