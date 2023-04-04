@@ -77,18 +77,17 @@ function App() {
         </ContainerText>
         <ContainerProjects>
           <Project
-            img={projeto1}
-            linkToProject="https://otaviusedano.github.io/translation/"
-            linkToCode="https://github.com/otaviusedano/translation"
-            projectName="Translation"
+            img={projeto4}
+            linkToProject="https://e-commerce-seven-orpin.vercel.app/"
+            linkToCode="https://github.com/otaviusedano/E-commerce"
+            projectName="Minima"
             techs={[
               "HTML5",
               "CSS3",
-              "AXIOS",
+              "TAILWIND CSS",
               "JAVASCRIPT",
               "REACT",
-              "SCSS",
-              "LOCALSTORAGE",
+              "REACT ROUTER DOM",
             ]}
           />
           <Project
@@ -96,7 +95,16 @@ function App() {
             linkToProject="https://checked-cbfcf.web.app/"
             linkToCode="https://github.com/otaviusedano/checked-habits-2.0v-"
             projectName="Habits 2.0"
-            techs={["HTML5", "CSS3", "JAVASCRIPT", "FIREBASE", "REACT", "SCSS"]}
+            techs={[
+              "HTML5",
+              "CSS3",
+              "JAVASCRIPT",
+              "FIREBASE",
+              "REACT",
+              "SCSS",
+              "REACT ROUTER DOM",
+              "MUI MATERIAL",
+            ]}
           />
           <Project
             img={projeto3}
@@ -109,15 +117,25 @@ function App() {
               "SCSS",
               "JAVASCRIPT",
               "ANGULAR",
-              "CONSUMO DE API",
+              "API REST",
+              "REACT ROUTER DOM",
             ]}
           />
           <Project
-            img={projeto4}
-            linkToProject="https://otaviusedano.github.io/rocket-coffee/"
-            linkToCode="https://github.com/otaviusedano/rocket-coffee"
-            projectName="Rocket Coffee"
-            techs={["HTML5", "CSS3", "JAVASCRIPT", "DOM"]}
+            img={projeto1}
+            linkToProject="https://otaviusedano.github.io/translation/"
+            linkToCode="https://github.com/otaviusedano/translation"
+            projectName="Translation"
+            techs={[
+              "HTML5",
+              "CSS3",
+              "AXIOS",
+              "JAVASCRIPT",
+              "REACT",
+              "SCSS",
+              "API REST",
+              "LOCALSTORAGE",
+            ]}
           />
         </ContainerProjects>
       </ContainerSection>
