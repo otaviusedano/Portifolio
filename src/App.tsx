@@ -110,14 +110,7 @@ function App() {
             projectName="Pokemon Search"
             linkToProject="https://pokemon-search-angular.vercel.app/"
             linkToCode="https://github.com/otaviusedano/pokemon-search-V2-angular"
-            techs={[
-              "HTML5",
-              "SCSS",
-              "JAVASCRIPT",
-              "ANGULAR",
-              "API REST",
-              "REACT ROUTER DOM",
-            ]}
+            techs={["HTML5", "SCSS", "JAVASCRIPT", "ANGULAR", "API REST"]}
           />
           <Project
             img={projeto1}

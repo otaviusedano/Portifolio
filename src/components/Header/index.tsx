@@ -28,7 +28,7 @@ export function Header() {
             isDynamic={true}
             ignoreCancelEvents={false}
           >
-            <span>Projects</span>
+            <span>Projetos</span>
           </Link>
         </ContainerAnchor>
         <ContainerAnchor>
@@ -44,7 +44,7 @@ export function Header() {
             isDynamic={true}
             ignoreCancelEvents={false}
           >
-            <span>Profile</span>
+            <span>Perfil</span>
           </Link>
         </ContainerAnchor>
       </ContainerAnchors>
